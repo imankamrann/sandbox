@@ -6,7 +6,7 @@ class Student:
         return self.__name
 
     def display(self):
-        print("name: ", self.__name)
+        print("name: ", self.getName())
 
 S = Student()
 S.setName("marceline")
