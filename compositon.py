@@ -8,12 +8,18 @@ class Car:
 
 
 class Person:
-    def __init__(self):
-        self.car = Car("toyota")
+    def __init__(self, n, a, c):
+        self.name = n
+        self.age = a
+        self.car = c
 
-    def displayPerson(self, a):
-        print(f"marceline is {a} years old. she drives a {self.car.getCarType()}")
+    def displayPerson(self):
+        print(f"{self.name} is {self.age} years old. she drives a {self.car.getCarType()}")
         
    
-p = Person()
-p.displayPerson(16)
+p = Person("marceline", 1000, Car("toyota"))
+p.displayPerson()
+
+b = Person("bubblegum", 830, Car("volks wagon"))
+b.displayPerson()
+
