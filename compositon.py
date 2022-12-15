@@ -6,7 +6,6 @@ class Car:
         return self.cartype
   
 
-
 class Person:
     def __init__(self, n, a, c):
         self.name = n
